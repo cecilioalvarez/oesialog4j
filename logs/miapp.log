@@ -1,33 +1,20 @@
-2023-10-24 11:31:34,296 [WARN  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:19) - el fichero tiene que existirmifichero.txt
-2023-10-24 11:31:34,300 [INFO  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:22) - estamos leyendo el fichero
-2023-10-24 11:31:34,304 [INFO  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:27) - estamos leyendo una linea
-2023-10-24 11:31:34,304 [INFO  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:29) - estamos acabando de leer una linea
-2023-10-24 11:31:35,309 [WARN  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:19) - el fichero tiene que existirmifichero.txt
-2023-10-24 11:31:35,310 [INFO  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:22) - estamos leyendo el fichero
-2023-10-24 11:31:35,311 [INFO  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:27) - estamos leyendo una linea
-2023-10-24 11:31:35,313 [INFO  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:29) - estamos acabando de leer una linea
-2023-10-24 11:31:35,315 [WARN  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:19) - el fichero tiene que existirmifichero2.txt
-2023-10-24 11:31:35,316 [INFO  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:22) - estamos leyendo el fichero
-2023-10-24 11:31:35,318 [ERROR ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:35) -  se ha producido un error
-java.nio.file.NoSuchFileException: mifichero2.txt
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236) ~[?:?]
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:380) ~[?:?]
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:432) ~[?:?]
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422) ~[?:?]
-	at java.base/java.nio.file.Files.newInputStream(Files.java:160) ~[?:?]
-	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2922) ~[?:?]
-	at java.base/java.nio.file.Files.readAllLines(Files.java:3412) ~[?:?]
-	at java.base/java.nio.file.Files.readAllLines(Files.java:3453) ~[?:?]
-	at es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:24) [classes/:?]
-	at es.oesia.logs.Principal2.main(Principal2.java:15) [classes/:?]
-2023-10-24 11:31:36,368 [WARN  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:19) - el fichero tiene que existirmifichero.txt
-2023-10-24 11:31:36,371 [INFO  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:22) - estamos leyendo el fichero
-2023-10-24 11:31:36,373 [INFO  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:27) - estamos leyendo una linea
-2023-10-24 11:31:36,379 [INFO  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:29) - estamos acabando de leer una linea
-2023-10-24 11:31:37,388 [WARN  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:19) - el fichero tiene que existirmifichero.txt
-2023-10-24 11:31:37,389 [INFO  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:22) - estamos leyendo el fichero
-2023-10-24 11:31:37,391 [INFO  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:27) - estamos leyendo una linea
-2023-10-24 11:31:37,397 [INFO  ] oesia.logs.GestorFichero.leerFichero(GestorFichero.java:29) - estamos acabando de leer una linea
+2023-10-24 12:30:27,239--[INFO  ]   PersonaServices.buscarTodos(PersonaServices.java:30) entramos en buscar todos para añadir items
+2023-10-24 12:30:27,243--[INFO  ]   PersonaServices.buscarTodos(PersonaServices.java:31) entramos ya estamos en la lista
+2023-10-24 12:30:27,243--[INFO  ]   PersonaServices.buscarTodos(PersonaServices.java:32) entramos vamos a crear el array
+2023-10-24 12:30:27,245--[INFO  ]   PersonaRepository.buscarTodos(PersonaRepository.java:21) entramos en buscar todos
+2023-10-24 12:30:27,245--[INFO  ]   PersonaRepository.buscarTodos(PersonaRepository.java:21) entramos en buscar todos
+2023-10-24 12:30:27,245--[WARN  ]   PersonaRepository.buscarTodos(PersonaRepository.java:25) la lista no puede ser tan corta
+2023-10-24 12:30:27,245--[WARN  ]   PersonaRepository.buscarTodos(PersonaRepository.java:25) la lista no puede ser tan corta
+2023-10-24 12:30:27,245--[ERROR ]   PersonaRepository.buscarTodos(PersonaRepository.java:34) la lista no es la adecuada
+java.lang.RuntimeException: error grave en la lista
+	at es.oesia.app1.repositories.PersonaRepository.buscarTodos(PersonaRepository.java:30) [classes/:?]
+	at es.oesia.app1.services.PersonaServices.buscarTodos(PersonaServices.java:36) [classes/:?]
+	at es.oesia.logs.Principal2.main(Principal2.java:18) [classes/:?]
+2023-10-24 12:30:27,245--[ERROR ]   PersonaRepository.buscarTodos(PersonaRepository.java:34) la lista no es la adecuada
+java.lang.RuntimeException: error grave en la lista
+	at es.oesia.app1.repositories.PersonaRepository.buscarTodos(PersonaRepository.java:30) [classes/:?]
+	at es.oesia.app1.services.PersonaServices.buscarTodos(PersonaServices.java:36) [classes/:?]
+	at es.oesia.logs.Principal2.main(Principal2.java:18) [classes/:?]
+2023-10-24 12:30:27,264--[INFO  ]   PersonaServices.buscarTodos(PersonaServices.java:42) salimos en buscar todos para añadir items
+2023-10-24 12:30:27,264--[INFO  ]   PersonaServices.buscarTodos(PersonaServices.java:43) salimos estamos por salir que salimos
+2023-10-24 12:30:27,264--[INFO  ]   PersonaServices.buscarTodos(PersonaServices.java:44) salimos salimos del todo

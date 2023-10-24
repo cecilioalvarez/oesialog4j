@@ -1,31 +1,24 @@
 package es.oesia.logs;
 
-import java.io.IOException;
+
+
+import java.util.List;
+
+import es.oesia.app1.models.Persona;
+import es.oesia.app1.repositories.PersonaRepository;
+import es.oesia.app1.services.PersonaServices;
 
 public class Principal2 {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 
-		try {
-			for (int i = 0; i < 2; i++) {
-				Thread.sleep(1000);
-				GestorFichero.leerFichero("mifichero.txt");
-			}
-			try {
-				GestorFichero.leerFichero("mifichero2.txt");
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				//e.printStackTrace();
-			}
-			for (int i = 0; i < 2; i++) {
-				Thread.sleep(1000);
-				GestorFichero.leerFichero("mifichero.txt");
-			}
-
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
+		PersonaRepository repo= new PersonaRepository();
+		PersonaServices servicio= new PersonaServices(repo);
+		List<Persona> lista= servicio.buscarTodos();
+		
+		lista.forEach(System.out::println);
+		
 	}
 
 }
