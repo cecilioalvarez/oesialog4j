@@ -14,6 +14,7 @@ public class Principal {
 		milogger.trace("hola soy una traza");
 		milogger.debug("hola soy un mensaje de debug");
 		milogger.info("hola soy un mensaje de info");
+		
 		milogger.warn("hola soy un mensaje de warn");
 		milogger.error("hola soy un mensaje de error");
 		milogger.fatal("hola soy un mensaje de fatal");
