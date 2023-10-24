@@ -2,7 +2,12 @@
 	<Appenders>
 		<File name="logFichero" filename="miapp.log">
 			<PatternLayout
-				pattern="%d--[%-6p]   %C{1}.%M(%F:%L) %m%n" />
+				pattern="%d{yyyy-MM-dd HH:MM:ss}--[%-4p]   %C{-5}.%M(%F:%L) %m%n" />
+		</File>
+		
+		<File name="logFicheroDevelop" filename="miappdevelop.log">
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:MM:ss}--[%-4p]   %C{-5}.%M(%F:%L) %m%n" />
 		</File>
 
 
@@ -11,11 +16,16 @@
 		<Root level="debug">
 			<AppenderRef ref="logFichero" />
 		</Root>
-		<!-- no existe ahora mismo -->
-		<Logger name="es.oesia.app1.repositories.PersonaRepository"
-			level="info">
-			<AppenderRef ref="logFichero" />
+		
+
+		<Logger name="es.oesia.app1.services" level="warn">
+			<AppenderRef ref="logFicheroDevelop" />
 		</Logger>
+
+		<Logger name="es.oesia.app1.repositories" level="info">
+			<AppenderRef ref="logFicheroDevelop" />
+		</Logger>
+	
 
 	</Loggers>
 
