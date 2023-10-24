@@ -1,12 +1,14 @@
 <Configuration>
-<Appenders>
-	<Console name="logConsola" target="SYSTEM_OUT">	
-	</Console>
-</Appenders>
-<Loggers>
-	<Root level="trace">
-	<AppenderRef ref="logConsola"/>
-	</Root>
-</Loggers>
+	<Appenders>
+		<File name="logFichero" filename="miapp.log">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:MM:ss}:%p: %l %m%n" />
+
+		</File>
+	</Appenders>
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="logFichero" />
+		</Root>
+	</Loggers>
 
 </Configuration>

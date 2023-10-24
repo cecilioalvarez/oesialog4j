@@ -1,0 +1,33 @@
+2023-10-24 11:10:17:WARN: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:19) el fichero tiene que existirmifichero.txt
+2023-10-24 11:10:17:INFO: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:22) estamos leyendo el fichero
+2023-10-24 11:10:17:INFO: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:27) estamos leyendo una linea
+2023-10-24 11:10:17:INFO: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:29) estamos acabando de leer una linea
+2023-10-24 11:10:18:WARN: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:19) el fichero tiene que existirmifichero.txt
+2023-10-24 11:10:18:INFO: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:22) estamos leyendo el fichero
+2023-10-24 11:10:18:INFO: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:27) estamos leyendo una linea
+2023-10-24 11:10:18:INFO: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:29) estamos acabando de leer una linea
+2023-10-24 11:10:18:WARN: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:19) el fichero tiene que existirmifichero2.txt
+2023-10-24 11:10:18:INFO: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:22) estamos leyendo el fichero
+2023-10-24 11:10:18:ERROR: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:35)  se ha producido un error
+java.nio.file.NoSuchFileException: mifichero2.txt
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236) ~[?:?]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380) ~[?:?]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432) ~[?:?]
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422) ~[?:?]
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160) ~[?:?]
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2922) ~[?:?]
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3412) ~[?:?]
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3453) ~[?:?]
+	at es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:24) [classes/:?]
+	at es.oesia.logs.Principal2.main(Principal2.java:15) [classes/:?]
+2023-10-24 11:10:19:WARN: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:19) el fichero tiene que existirmifichero.txt
+2023-10-24 11:10:19:INFO: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:22) estamos leyendo el fichero
+2023-10-24 11:10:19:INFO: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:27) estamos leyendo una linea
+2023-10-24 11:10:19:INFO: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:29) estamos acabando de leer una linea
+2023-10-24 11:10:20:WARN: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:19) el fichero tiene que existirmifichero.txt
+2023-10-24 11:10:20:INFO: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:22) estamos leyendo el fichero
+2023-10-24 11:10:20:INFO: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:27) estamos leyendo una linea
+2023-10-24 11:10:20:INFO: es.oesia.logs.GestorFichero.leerFichero(GestorFichero.java:29) estamos acabando de leer una linea
