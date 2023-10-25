@@ -1,24 +1,24 @@
 <Configuration>
 	<Appenders>
-		
 
-		<RollingFile name="logFichero"
-			fileName="miapp2.log"
-			filePattern="miapp2.%i.log"
-			ignoreExceptions="false">
-			<PatternLayout>
-				<Pattern>%d{yyyy-MM-dd HH:mm:ss} %p %m%n</Pattern>
-			</PatternLayout>
-			<Policies>
-				<OnStartupTriggeringPolicy />
-				<SizeBasedTriggeringPolicy size="1 KB" />
-			</Policies>
-		</RollingFile>
+		<JDBC name="jdbc" tableName="EVENT_LOGS">
+
+			<ConnectionFactory
+				class="es.oesia.helpers.ConnectionFactory" method="getConnection" />
+
+			<Column name="ID" pattern="%u" />
+			<Column name="DATE_TIME" isEventTimestamp="true" />
+			<Column name="CLASS" pattern="%logger" />
+			<Column name="LEVEL" pattern="%level" />
+			<Column name="MESSAGE" pattern="%message" />
+			<Column name="EXCEPTION" pattern="%ex{full}" isClob="true" />
+
+		</JDBC>
 
 	</Appenders>
 	<Loggers>
 		<Root level="debug">
-			<AppenderRef ref="logFichero" />
+			<AppenderRef ref="jdbc" />
 		</Root>
 	</Loggers>
 

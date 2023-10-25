@@ -8,7 +8,7 @@ public class Principal3 {
 
 		try {
 			for (int i = 0; i < 200; i++) {
-				Thread.sleep(10);
+				Thread.sleep(100);
 				GestorFichero.leerFichero("mifichero.txt");
 			}
 			try {
@@ -18,7 +18,7 @@ public class Principal3 {
 				//e.printStackTrace();
 			}
 			for (int i = 0; i < 200; i++) {
-				Thread.sleep(10);
+				Thread.sleep(100);
 				GestorFichero.leerFichero("mifichero.txt");
 			}
 

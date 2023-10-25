@@ -1,0 +1,25 @@
+<Configuration>
+	<Appenders>
+		<RollingFile name="logFichero"
+			fileName="miapp2.log"
+			filePattern="miapp2.%d{MM-dd-yyy-HH-mm}.log"
+			ignoreExceptions="false">
+			<PatternLayout>
+				<!-- de hasta 5 veces el rendimiento de los ficheros log -->
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss} %p %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="2 KB" />
+			</Policies>
+			 <DefaultRolloverStrategy max="2"/>
+		</RollingFile>
+
+	</Appenders>
+	<Loggers>
+		<Root level="debug">
+			<AppenderRef ref="logFichero" />
+		</Root>
+	</Loggers>
+
+</Configuration>
