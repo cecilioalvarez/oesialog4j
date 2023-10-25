@@ -15,7 +15,7 @@ public class Principal2 {
 
 	public static void main(String[] args) {
 
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 300; i++) {
 
 			milogger.info("app principal");
 		}
@@ -24,7 +24,7 @@ public class Principal2 {
 		PersonaServices servicio = new PersonaServices(repo);
 		List<Persona> lista = servicio.buscarTodos();
 
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 300; i++) {
 
 			milogger.info("app principal");
 		}
